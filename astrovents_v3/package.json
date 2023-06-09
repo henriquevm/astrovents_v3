@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo-google-fonts/comfortaa": "^0.2.3",
     "@expo-google-fonts/roboto": "^0.2.3",
     "expo": "^48.0.0",
     "expo-font": "~11.1.1",
