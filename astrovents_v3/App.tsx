@@ -1,24 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator} from 'react-native';
 import React from 'react'
-import styled, { ThemeProvider } from 'styled-components/native'
+import { ThemeProvider } from 'styled-components/native'
 
 import Groups from './src/sreens/Groups';
 import theme from './src/theme';
+import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
+import { Comfortaa_700Bold, Comfortaa_400Regular } from '@expo-google-fonts/comfortaa';
 
 
 export default function App() {
+  
+  const [loadsFonts] = useFonts({Roboto_400Regular, Roboto_700Bold, Comfortaa_700Bold, Comfortaa_400Regular});
+
   return (
+
     <ThemeProvider theme={theme}>
-      <Groups />
+      { loadsFonts ? <Groups /> : <ActivityIndicator/>}
+      
     </ThemeProvider>
 
-    //Proximo passo incluir o theme
-
-    // <View style={styles.container}>
-    //   <Text>Ola</Text>
-    //   <StatusBar style="auto" />
-    // </View>
   );
 }
 
