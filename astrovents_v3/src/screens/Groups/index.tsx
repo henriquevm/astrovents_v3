@@ -1,9 +1,11 @@
+import { Header } from "../../components/Header";
 import { Container, Title } from "./stlyles";
 
 export default function Groups(){
     return(
         <Container>
-            <Title>
+            <Header/>
+            <Title> 
                 Groups
             </Title>
         </Container>

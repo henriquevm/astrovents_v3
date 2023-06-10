@@ -22,7 +22,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {!loadsFonts ? <Groups /> : <Loading />}
+      {loadsFonts ? <Groups /> : <Loading />}
 
     </ThemeProvider>
 
