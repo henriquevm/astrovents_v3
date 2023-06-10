@@ -6,6 +6,7 @@ import Groups from './src/screens/Groups';
 import theme from './src/theme';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import { Comfortaa_700Bold, Comfortaa_400Regular } from '@expo-google-fonts/comfortaa';
+import { Loading } from './src/components/Loading';
 
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
 
     <ThemeProvider theme={theme}>
       
-      { loadsFonts ? <Groups /> : <ActivityIndicator/>}
+      { !loadsFonts ? <Groups /> : <Loading/>}
       
     </ThemeProvider>
 
