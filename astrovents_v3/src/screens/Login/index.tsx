@@ -1,35 +1,33 @@
-import { ImageBackground, Image, Text, View, TouchableOpacity, TextInput } from 'react-native';
-import { styles } from "./styles";
+import { Image, Text, View, TouchableOpacity, TextInput } from 'react-native';
+import { Container, ViewLogo, TxtLogo, ImgOpenLogo, FormLogin, InputEmailPass, ViewForgotPassword, TxtForgotPassword, ButtonSignUp, TxtSignUp } from "./styles";
 
 export default function Login() {
     return (
-        <View style={styles.container}>
-            <View style={styles.viewLogo}>
-                <Text style={styles.txtLogo}>Astrovents</Text>
-                <Image source={require('../../../img/openLogo.png')} style={styles.imgOpenLogo} />
-            </View>
-            <View style={styles.formLogin}>
+        <Container>
+            <ViewLogo>
+                <TxtLogo>Astrovents</TxtLogo>
+                <ImgOpenLogo source={require('../../../img/openLogo.png')} />
+            </ViewLogo>
+            <FormLogin>
 
-                <TextInput
-                    style={styles.inputEmailPass}
+                <InputEmailPass
                     placeholder='E-mail'
-                    placeholderTextColor={'#5b5959'}
+                    placeholderTextColor='#5b5959'
                 />
-                <TextInput
-                    style={styles.inputEmailPass}
+                <InputEmailPass
                     placeholder='Senha'
-                    placeholderTextColor={'#5b5959'}
+                    placeholderTextColor='#5b5959'
                 />
-                <View style={styles.viewForgotPassword}>
-                    <Text style={styles.txtForgotPassword}>
+                <ViewForgotPassword>
+                    <TxtForgotPassword>
                         Esqueci minha senha
-                    </Text>
-                </View>
-                <TouchableOpacity style={styles.buttonSignUp}>
-                    <Text style={styles.txtSignUp}>ENTRAR</Text>
-                </TouchableOpacity>
-            </View>
-        </View>
+                    </TxtForgotPassword>
+                </ViewForgotPassword>
+                <ButtonSignUp>
+                    <TxtSignUp>ENTRAR</TxtSignUp>
+                </ButtonSignUp>
+            </FormLogin>
+        </Container>
     );
 }
 

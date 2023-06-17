@@ -9,6 +9,7 @@ import { Comfortaa_700Bold, Comfortaa_400Regular } from '@expo-google-fonts/comf
 import { Loading } from './src/components/Loading';
 import { StatusBar } from 'react-native';
 import Start from './src/screens/Start';
+import Login from './src/screens/Login';
 
 
 export default function App() {
@@ -23,7 +24,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {loadsFonts ? <Start /> : <Loading />}
+      {loadsFonts ? <Login /> : <Loading />}
 
     </ThemeProvider>
 

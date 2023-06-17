@@ -1,4 +1,3 @@
-import { Text, View, Image, TouchableOpacity } from 'react-native';
 import { ImgBackground, ViewLogo, ImgOpenLogo, TextLogo, ViewButtons, ButtonLogin, TextLogin, ButtonSignUp, TextSignUp } from './styles';
 
 export default function Start() {
