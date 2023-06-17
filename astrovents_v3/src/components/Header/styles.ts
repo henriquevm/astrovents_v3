@@ -1,3 +1,4 @@
+import { ArrowBendUpLeft } from "phosphor-react-native";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -11,3 +12,12 @@ export const Logo = styled.Image`
     width: 55px;
     height: 55px;
 `;
+
+export const BackButton =styled.TouchableOpacity`
+    flex: 1;
+`;
+
+export const BackArrow = styled(ArrowBendUpLeft).attrs(({theme})=> ({
+    size: 32,
+    color: theme.COLORS.BLACK_SPACE
+}))``;

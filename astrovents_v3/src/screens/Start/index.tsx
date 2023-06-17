@@ -1,19 +1,22 @@
-import { ImageBackground, Image, Text, View, TouchableOpacity } from 'react-native';
-//import { styles } from "./styles";
-import styles from 'styled-components'
-
-import { ImgBackground } from './styles'
+import { Text, View, Image, TouchableOpacity } from 'react-native';
+import { ImgBackground, styles } from './styles'
 
 export default function Start() {
     return (
-        <View>
-            <ImgBackground>
-                <ImageBackground source={require('../../../img/open.png')}>
-                    
-                    
-                </ImageBackground>
-            </ImgBackground>
-        </View>
+        <ImgBackground source={require('../../../img/open.png')}>
+            <View style={styles.viewLogo}>
+                <Image source={require('../../../img/openLogo.png')} style={styles.imgOpenLogo} />
+                <Text style={styles.txtLogo}>Astrovents</Text>
+            </View>
+            <View style={styles.viewButtons}>
+                <TouchableOpacity style={styles.buttonLogin}>
+                    <Text style={styles.txtLogin}>ENTRAR</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.buttonSignUp}>
+                    <Text style={styles.txtSignUp}>CADASTRAR</Text>
+                </TouchableOpacity>
+            </View>
+        </ImgBackground>
     );
 }
 

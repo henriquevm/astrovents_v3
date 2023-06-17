@@ -8,6 +8,7 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/
 import { Comfortaa_700Bold, Comfortaa_400Regular } from '@expo-google-fonts/comfortaa';
 import { Loading } from './src/components/Loading';
 import { StatusBar } from 'react-native';
+import Start from './src/screens/Start';
 
 
 export default function App() {
@@ -22,7 +23,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {loadsFonts ? <Groups /> : <Loading />}
+      {loadsFonts ? <Start /> : <Loading />}
 
     </ThemeProvider>
 

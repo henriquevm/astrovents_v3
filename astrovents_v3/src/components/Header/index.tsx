@@ -1,11 +1,13 @@
-import { Container, Logo } from './styles';
-
+import { BackArrow, BackButton, Container, Logo } from './styles';
 import logoImg from '../../../img/openLogo.png';
 
-export function Header(){
-    return(
+export function Header() {
+    return (
         <Container>
-            <Logo source={logoImg}/>
+            <BackButton>
+                <BackArrow />
+            </BackButton>
+            <Logo source={logoImg} />
         </Container>
     );
 }
