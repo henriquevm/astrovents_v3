@@ -16,10 +16,12 @@
     "expo-status-bar": "~1.4.4",
     "expo-updates": "~0.16.4",
     "json5": "^2.2.3",
+    "phosphor-react-native": "^1.1.2",
     "react": "18.2.0",
     "react-native": "0.71.8",
     "styled-components": "^5.3.10",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "react-native-svg": "13.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
