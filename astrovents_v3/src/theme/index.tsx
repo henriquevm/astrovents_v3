@@ -3,7 +3,7 @@ export default {
   COLORS: {
 
     BLACK_SPACE: '#01050B',
-    STAR_WHITE: '#E7EFF4',
+    WHITE_STAR: '#E7EFF4',
 
     ///
     WHITE: '#FFFFFF',

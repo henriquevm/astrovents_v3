@@ -1,8 +1,6 @@
 //import { StyleSheet, ImageBackground } from 'react-native';
 import styled from 'styled-components/native';
 
-import { StyleSheet, ImageBackground } from 'react-native';
-
 export const ImgBackground = styled.ImageBackground`
     flex: 1;
     resize: cover;
@@ -10,58 +8,65 @@ export const ImgBackground = styled.ImageBackground`
     justify-content: center;
 `;
 
-export const styles = StyleSheet.create({
-    imgBackground:{
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '100%',
-        height:'100%'
-    },
-    viewLogo: {
-        flexDirection: 'row'
-    },
-    imgOpenLogo: {
-        width: 80,
-        height: 80
-    },
-    txtLogo: {
-        color: '#000000',
-        fontSize: 45,
-        paddingTop: 10
-    },
-    viewButtons: {
-        position: 'absolute',
-        bottom: 35,
-        flexDirection: 'row',
-        justifyContent: 'flex-end',
-    },
-    buttonLogin:{
-        height: 52,
-        width: 167,
-        marginRight: 5,
-        backgroundColor: '#ffffff',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 5,
-        borderColor: '#000000',
-        borderWidth: 2
-        
-    },
-    txtLogin:{
-        color: '#0c0c0c'
-    },
-    buttonSignUp:{
-        height: 52,
-        width: 167,
-        marginLeft: 5,
-        backgroundColor: '#0c0c0c',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 5,
-        borderColor: '#000000',
-        borderWidth: 2
-    },
-    txtSignUp:{
-        color: '#f8f8f8'
-    }
-});
+export const ViewLogo = styled.View`
+    flex-direction: row;
+`;
+
+export const ImgOpenLogo = styled.Image`
+    width: 80px;
+    height: 80px;
+`;
+
+export const Container = styled.View`
+    flex: 1;
+    background-color: ${({ theme }) => theme.COLORS.GRAY_200};
+    align-items:  center;
+    justify-content: center;
+`;
+
+export const TextLogo = styled.Text`
+    color: ${({ theme }) => theme.COLORS.BLACK_SPACE};
+    font-size: 45px;
+    font-family: ${({ theme }) => theme.FONT_FAMILY.COMFORTAA_REGULAR};
+`;
+
+export const ViewButtons = styled.View`
+    position: absolute;
+    bottom: 35px;
+    flex-direction: row;
+    justify-content: flex-end;
+`;
+
+export const ButtonLogin = styled.TouchableOpacity`
+    height: 52px;
+    width: 167px;
+    margin-right: 5px;
+    background-color: ${({ theme }) => theme.COLORS.WHITE_STAR};
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border-color: ${({ theme }) => theme.COLORS.BLACK_SPACE};
+    border-width: 2px;
+`;
+
+export const TextLogin = styled.Text`
+    font-family: ${({ theme }) => theme.FONT_FAMILY.ROBOTO_BOLD};
+    color: ${({ theme }) => theme.COLORS.BLACK_SPACE};
+`;
+
+export const ButtonSignUp = styled.TouchableOpacity`
+    height: 52px;
+    width: 167px;
+    margin-left: 5px;
+    background-color: ${({ theme }) => theme.COLORS.BLACK_SPACE};
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border-color: ${({ theme }) => theme.COLORS.BLACK_SPACE};
+    border-width: 2px;
+`;
+
+export const TextSignUp = styled.Text`
+    font-family: ${({ theme }) => theme.FONT_FAMILY.ROBOTO_BOLD};
+    color: ${({ theme }) => theme.COLORS.WHITE_STAR};
+`;
