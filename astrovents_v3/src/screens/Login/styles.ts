@@ -6,8 +6,9 @@ export const Container = styled.View`
 `;
 
 export const ViewLogo = styled.View`
-    top: 100px;
+    top: 80px;
     height: 200px;
+    width: 80%;
     flex-direction: row;
 `;
 
@@ -23,7 +24,7 @@ export const ImgOpenLogo = styled.Image`
 `;
 
 export const FormLogin = styled.View`
-    width: 320px;
+    width: 80%;
 `;
 
 export const InputEmailPass = styled.TextInput`

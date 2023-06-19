@@ -1,11 +1,12 @@
-import { Image, Text, View, TouchableOpacity, TextInput } from 'react-native';
-import { Container, ViewLogo, TxtLogo, ImgOpenLogo, FormLogin, InputEmailPass, ViewForgotPassword, TxtForgotPassword, ButtonSignUp, TxtSignUp } from "./styles";
+import { Container, ViewLogo, TxtLogo, ImgOpenLogo, FormLogin, InputEmailPass, ViewForgotPassword, TxtForgotPassword } from "./styles";
 
 import { ButtonBlack } from "../../components/ButtonBlack";
+import { ReturnButton } from "../../components/ReturnButton";
 
 export default function Login() {
     return (
         <Container>
+            <ReturnButton/>
             <ViewLogo>
                 <TxtLogo>Astrovents</TxtLogo>
                 <ImgOpenLogo source={require('../../../img/openLogo.png')} />
@@ -24,7 +25,7 @@ export default function Login() {
                         Esqueci minha senha
                     </TxtForgotPassword>
                 </ViewForgotPassword>
-                <ButtonBlack />
+                <ButtonBlack buttonText="ENTRAR" />
             </FormLogin>
         </Container>
     );

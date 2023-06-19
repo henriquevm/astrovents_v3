@@ -1,10 +1,13 @@
 import { ButtonSignUp, TxtSignUp } from './styles';
-import logoImg from '../../../img/openLogo.png';
 
-export function ButtonBlack() {
+interface ButtonBlackProps {
+    buttonText: string;
+}
+
+export function ButtonBlack({ buttonText }: ButtonBlackProps) {
     return (
         <ButtonSignUp>
-            <TxtSignUp>ENTRAR</TxtSignUp>
+            <TxtSignUp>{buttonText}</TxtSignUp>
         </ButtonSignUp>
     );
 }
