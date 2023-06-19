@@ -11,15 +11,15 @@ export const ViewLogo = styled.View`
     flex-direction: row;
 `;
 
+export const TxtLogo = styled.Text`
+    font-family: ${({ theme }) => theme.FONT_FAMILY.COMFORTAA_REGULAR};
+    color: ${({ theme }) => theme.COLORS.BLACK_SPACE};
+    font-size: 45px;
+`;
+
 export const ImgOpenLogo = styled.Image`
     width: 80px;
     height: 80px;
-`;
-
-export const TxtLogo = styled.Text`
-    color: #000000;
-    font-size: 45px;
-    padding-top: 10px;
 `;
 
 export const FormLogin = styled.View`
@@ -27,29 +27,15 @@ export const FormLogin = styled.View`
 `;
 
 export const InputEmailPass = styled.TextInput`
+    font-family: ${({ theme }) => theme.FONT_FAMILY.ROBOTO_REGULAR};
     font-size: 16px;
     margin-bottom: 35px;
     padding-left: 12px;
     height: 65px;
     border-width: 3px;
-    border-color: #000000;
+    border-color: ${({ theme }) => theme.COLORS.BLACK_SPACE};
     border-style: solid;
     border-radius: 3px;
-`;
-
-export const ButtonSignUp = styled.TouchableOpacity`
-    height: 52px;
-    width: 320px;
-    background-color: #0c0c0c;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    border-color: #000000;
-    border-width: 2px;
-`;
-
-export const TxtSignUp = styled.Text`
-    color: #f8f8f8;
 `;
 
 export const ViewForgotPassword = styled.View`
@@ -59,5 +45,20 @@ export const ViewForgotPassword = styled.View`
 `;
 
 export const TxtForgotPassword = styled.Text`
-    color: #6E2307;
+    color: ${({ theme }) => theme.COLORS.BLACK_SPACE};
+`;
+
+export const ButtonSignUp = styled.TouchableOpacity`
+    height: 52px;
+    width: 320px;
+    background-color: ${({ theme }) => theme.COLORS.BLACK_SPACE};
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border-color: ${({ theme }) => theme.COLORS.BLACK_SPACE};
+    border-width: 2px;
+`;
+
+export const TxtSignUp = styled.Text`
+    color: ${({ theme }) => theme.COLORS.WHITE_STAR};
 `;

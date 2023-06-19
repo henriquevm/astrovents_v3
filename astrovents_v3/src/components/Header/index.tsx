@@ -7,7 +7,7 @@ export function Header() {
             <BackButton>
                 <BackArrow />
             </BackButton>
-            <Logo source={logoImg} />
+            {/*<Logo source={logoImg} />*/}
         </Container>
     );
 }
