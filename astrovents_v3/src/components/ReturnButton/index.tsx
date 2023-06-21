@@ -1,11 +1,9 @@
-import { BackArrow, BackButton, Container } from './styles';
+import { BackArrow, BackButton } from './styles';
 
 export function ReturnButton() {
     return (
-        <Container>
-            <BackButton>
-                <BackArrow />
-            </BackButton>
-        </Container>
+        <BackButton>
+            <BackArrow />
+        </BackButton>
     );
 }
