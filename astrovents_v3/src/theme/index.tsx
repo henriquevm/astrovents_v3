@@ -4,6 +4,7 @@ export default {
 
     BLACK_SPACE: '#01050B',
     WHITE_STAR: '#E7EFF4',
+    GRAY_SKY: '#313234',
 
     ///
     WHITE: '#FFFFFF',

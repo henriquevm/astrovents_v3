@@ -2,8 +2,12 @@ import { Container, ViewLogo, TxtLogo, ImgOpenLogo, FormLogin, InputEmailPass, V
 
 import { ButtonBlack } from "../../components/ButtonBlack";
 import { ReturnButton } from "../../components/ReturnButton";
+import { useTheme } from "styled-components/native";
 
 export default function Login() {
+    
+    const {COLORS} = useTheme();
+
     return (
         <Container>
             <ReturnButton/>
@@ -14,11 +18,11 @@ export default function Login() {
             <FormLogin>
                 <InputEmailPass
                     placeholder='E-mail'
-                    placeholderTextColor='#313234'
+                    placeholderTextColor={COLORS.GRAY_SKY}
                 />
                 <InputEmailPass
                     placeholder='Senha'
-                    placeholderTextColor='#313234'
+                    placeholderTextColor={COLORS.GRAY_SKY}
                 />
                 <ViewForgotPassword>
                     <TxtForgotPassword>
