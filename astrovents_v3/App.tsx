@@ -11,6 +11,7 @@ import { StatusBar } from 'react-native';
 import Start from './src/screens/Start';
 import Login from './src/screens/Login';
 import RecoverPassword from './src/screens/RecoverPassword';
+import SignupName from './src/screens/SignupName';
 
 
 export default function App() {
@@ -25,7 +26,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {loadsFonts ? <RecoverPassword /> : <Loading />}
+      {loadsFonts ? <SignupName /> : <Loading />}
 
     </ThemeProvider>
 

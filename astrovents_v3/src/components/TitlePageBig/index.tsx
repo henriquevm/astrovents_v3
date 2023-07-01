@@ -4,7 +4,7 @@ type ButtonBlackProps = {
     title: string;
 }
 
-export function TitlePage({ title }: ButtonBlackProps) {
+export function TitlePageBig({ title }: ButtonBlackProps) {
     return (
         <ViewLogo>
             <TxtLogo>{title}</TxtLogo>
