@@ -1,6 +1,6 @@
 import { ButtonSignUp, TxtSignUp } from './styles';
 
-interface ButtonBlackProps {
+type ButtonBlackProps = {
     buttonText: string;
 }
 
@@ -11,3 +11,4 @@ export function ButtonBlack({ buttonText }: ButtonBlackProps) {
         </ButtonSignUp>
     );
 }
+

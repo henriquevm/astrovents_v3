@@ -10,6 +10,7 @@ import { Loading } from './src/components/Loading';
 import { StatusBar } from 'react-native';
 import Start from './src/screens/Start';
 import Login from './src/screens/Login';
+import RecoverPassword from './src/screens/RecoverPassword';
 
 
 export default function App() {
@@ -24,7 +25,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {loadsFonts ? <Login /> : <Loading />}
+      {loadsFonts ? <RecoverPassword /> : <Loading />}
 
     </ThemeProvider>
 

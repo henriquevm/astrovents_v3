@@ -1,8 +1,9 @@
-import { Container, ViewLogo, TxtLogo, ImgOpenLogo, FormLogin, InputEmailPass, ViewForgotPassword, TxtForgotPassword } from "./styles";
+import { Container, FormLogin, InputEmailPass, ViewForgotPassword, TxtForgotPassword } from "./styles";
 
 import { ButtonBlack } from "../../components/ButtonBlack";
 import { ReturnButton } from "../../components/ReturnButton";
 import { useTheme } from "styled-components/native";
+import { TitlePageBig } from "../../components/TitlePageBig";
 
 export default function Login() {
     
@@ -11,10 +12,7 @@ export default function Login() {
     return (
         <Container>
             <ReturnButton/>
-            <ViewLogo>
-                <TxtLogo>Astrovents</TxtLogo>
-                <ImgOpenLogo source={require('../../../img/openLogo.png')} />
-            </ViewLogo>
+            <TitlePageBig title="Astrovents"/>
             <FormLogin>
                 <InputEmailPass
                     placeholder='E-mail'
@@ -34,5 +32,3 @@ export default function Login() {
         </Container>
     );
 }
-
-
